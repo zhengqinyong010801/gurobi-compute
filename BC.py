@@ -206,7 +206,7 @@ if __name__ == '__main__':
     N = [i for i in range(1, n + 1)]
 
     for idx in range(1,20+1):
-        ins_name = 'Robust-CVRP/Data/R-{}-{}/rcvrp-{}-{}-{}.txt'.format(n,int_max, n, int_max, idx)
+        ins_name = 'Data/R-{}-{}/rcvrp-{}-{}-{}.txt'.format(n,int_max, n, int_max, idx)
         time_limit = float(3600)
         #########
         n, d_up, d_down, q = get_robust_rcvrp_instance(ins_name)
@@ -220,5 +220,4 @@ if __name__ == '__main__':
         print('obj:{}'.format(obj))
         print('regret:{}'.format(regret))
         print('sol:{}'.format(sol))
-
 
